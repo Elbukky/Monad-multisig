@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Sign Multi-Signature Transaction</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#3a225f" data-border-radius="small"></script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <header class="mb-8">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <i class="fas fa-wallet text-custom text-2xl mr-3"></i>
+                    <h1 class="text-2xl font-semibold text-[#3a225f]">Sign Multi-Signature Transaction</h1>
+                </div>
+                <div class="flex items-center bg-white rounded-lg px-4 py-2 shadow">
+                    <span class="text-custom font-medium">2/3 Signatures</span>
+                    <div class="w-32 h-2 bg-gray-200 rounded-full ml-3">
+                        <div class="w-2/3 h-2 bg-custom rounded-full"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="lg:col-span-2">
+                <div class="bg-white rounded-lg shadow p-6 mb-8">
+                    <h2 class="text-lg font-medium text-[#3a225f] mb-6">Transaction Details</h2>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="text-sm text-gray-500 mb-1">Amount</div>
+                            <div class="text-3xl font-semibold text-[#3a225f]">12.5 ETH</div>
+                        </div>
+                        <div>
+                            <div class="text-sm text-gray-500 mb-1">Recipient Address</div>
+                            <div class="flex items-center bg-gray-50 rounded p-3">
+                                <span class="text-sm font-mono text-gray-700">0x742d35Cc6634C0532925a3b844Bc454e4438f44e</span>
+                                <button class="ml-2 text-custom hover:text-custom-600">
+                                    <i class="far fa-copy"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div>
+                                <div class="text-sm text-gray-500 mb-1">Network Fee</div>
+                                <div class="text-base font-medium text-[#3a225f]">0.005 ETH</div>
+                            </div>
+                            <div>
+                                <div class="text-sm text-gray-500 mb-1">Total Amount</div>
+                                <div class="text-base font-medium text-[#3a225f]">12.505 ETH</div>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div>
+                                <div class="text-sm text-gray-500 mb-1">Transaction Type</div>
+                                <div class="text-base font-medium text-[#3a225f]">Transfer</div>
+                            </div>
+                            <div>
+                                <div class="text-sm text-gray-500 mb-1">Network</div>
+                                <div class="text-base font-medium text-[#3a225f]">Monad Mainnet</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h2 class="text-lg font-medium text-[#3a225f] mb-6">Active Signers</h2>
+                    <div class="space-y-6">
+                        <div class="flex items-center justify-between p-4 bg-custom bg-opacity-5 rounded-lg border border-custom">
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 text-xl mr-3"></i>
+                                <div>
+                                    <div class="text-sm font-medium text-[#3a225f]">Wallet 1</div>
+                                    <div class="text-sm text-gray-500">0x1234...5678</div>
+                                </div>
+                            </div>
+                            <div class="text-sm text-gray-500">Signed 2 mins ago</div>
+                        </div>
+                        <div class="flex items-center justify-between p-4 bg-custom bg-opacity-5 rounded-lg border border-custom">
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 text-xl mr-3"></i>
+                                <div>
+                                    <div class="text-sm font-medium text-[#3a225f]">Wallet 2</div>
+                                    <div class="text-sm text-gray-500">0x9876...4321</div>
+                                </div>
+                            </div>
+                            <div class="text-sm text-gray-500">Signed just now</div>
+                        </div>
+                        <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <div class="flex items-center">
+                                <i class="fas fa-clock text-gray-400 text-xl mr-3"></i>
+                                <div>
+                                    <div class="text-sm font-medium text-[#3a225f]">Wallet 3</div>
+                                    <div class="text-sm text-gray-500">0xabcd...efgh</div>
+                                </div>
+                            </div>
+                            <div class="text-sm text-gray-500">Pending</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-1">
+                <div class="bg-white rounded-lg shadow p-6 sticky top-8">
+                    <h2 class="text-lg font-medium text-[#3a225f] mb-6">Transaction Summary</h2>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="text-sm text-gray-500 mb-2">Required Signatures</div>
+                            <div class="flex items-center">
+                                <span class="text-2xl font-semibold text-[#3a225f]">2/3</span>
+                                <span class="ml-2 text-sm text-gray-500">signatures collected</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-sm text-gray-500 mb-2">Time Remaining</div>
+                            <div class="text-2xl font-semibold text-[#3a225f]">23:45:12</div>
+                        </div>
+                        <div class="pt-6 border-t border-gray-200">
+                            <button class="w-full bg-custom text-white font-medium py-3 px-4 rounded-lg !rounded-button hover:bg-custom-600 focus:outline-none focus:ring-2 focus:ring-custom focus:ring-offset-2 mb-4">
+                                Sign Transaction
+                            </button>
+                            <button class="w-full bg-white text-gray-700 font-medium py-3 px-4 rounded-lg !rounded-button border border-gray-300 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-custom focus:ring-offset-2">
+                                Reject Transaction
+                            </button>
+                        </div>
+                        <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+                            <div class="flex">
+                                <i class="fas fa-exclamation-triangle text-yellow-400 mt-1 mr-3"></i>
+                                <div class="text-sm text-yellow-700">
+                                    This transaction will expire in 23 hours. Make sure all required signatures are collected before expiration.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body></html>
