@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Multi-Signature Wallet Transaction</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#3A225F" data-border-radius="small"></script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-12">
+                <h1 class="text-3xl font-bold text-[#3A225F] mb-2">Multi-Signature Wallet Transaction</h1>
+                <p class="text-gray-600">Create a secure multi-signature transaction with multiple approvals required</p>
+            </div>
+
+            <div class="bg-white shadow rounded-lg p-8 mb-8">
+                <form id="transactionForm">
+                    <div class="space-y-8">
+                        <div>
+                            <h2 class="text-xl font-semibold text-gray-900 mb-4">Amount</h2>
+                            <div class="grid grid-cols-1 gap-6">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Currency</label>
+                                    <div class="relative">
+                                        <select class="block w-full !rounded-button border-gray-300 focus:border-[#3A225F] focus:ring-[#3A225F]">
+                                            <option>MON</option>
+                                            <option>BTC</option>
+                                            <option>USD</option>
+                                            <option>EUR</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Amount</label>
+                                    <div class="relative">
+                                        <input type="text" class="block w-full !rounded-button border-gray-300 focus:border-[#3A225F] focus:ring-[#3A225F]" placeholder="0.00"/>
+                                        <div class="absolute right-0 top-0 pr-3 flex items-center h-full">
+                                            <span class="text-gray-500 text-sm">≈ $0.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 class="text-xl font-semibold text-gray-900 mb-4">Wallet Address</h2>
+                            <div class="space-y-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Select Saved Address</label>
+                                    <select class="block w-full !rounded-button border-gray-300 focus:border-[#3A225F] focus:ring-[#3A225F]">
+                                        <option>Select wallet address</option>
+                                        <option>0x1234...5678</option>
+                                        <option>0x5678...9012</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Or Enter New Address</label>
+                                    <div class="flex gap-2">
+                                        <input type="text" class="block w-full !rounded-button border-gray-300 focus:border-[#3A225F] focus:ring-[#3A225F]" placeholder="Enter wallet address"/>
+                                        <button type="button" class="!rounded-button bg-gray-100 p-2 hover:bg-gray-200">
+                                            <i class="fas fa-qrcode text-gray-600"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 class="text-xl font-semibold text-gray-900 mb-4">Transaction Fee</h2>
+                            <div class="space-y-4">
+                                <div class="flex items-center gap-4 p-4 border !rounded-button hover:border-[#3A225F] cursor-pointer">
+                                    <input type="radio" name="fee" class="text-[#3A225F] focus:ring-[#3A225F]" checked=""/>
+                                    <div class="flex-1">
+                                        <div class="font-medium">Fast (&lt; 1 min)</div>
+                                        <div class="text-sm text-gray-500">0.005 MON ($8.50)</div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 p-4 border !rounded-button hover:border-[#3A225F] cursor-pointer">
+                                    <input type="radio" name="fee" class="text-[#3A225F] focus:ring-[#3A225F]"/>
+                                    <div class="flex-1">
+                                        <div class="font-medium">Standard (&lt; 3 mins)</div>
+                                        <div class="text-sm text-gray-500">0.003 MON ($5.10)</div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 p-4 border !rounded-button hover:border-[#3A225F] cursor-pointer">
+                                    <input type="radio" name="fee" class="text-[#3A225F] focus:ring-[#3A225F]"/>
+                                    <div class="flex-1">
+                                        <div class="font-medium">Slow (&lt; 10 mins)</div>
+                                        <div class="text-sm text-gray-500">0.001 MON ($1.70)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-50 p-6 !rounded-button">
+                            <h2 class="text-xl font-semibold text-gray-900 mb-4">Transaction Summary</h2>
+                            <div class="space-y-3">
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">Amount:</span>
+                                    <span class="font-medium">0.1 MON ($170.00)</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">Network Fee:</span>
+                                    <span class="font-medium">0.005 MON ($8.50)</span>
+                                </div>
+                                <div class="border-t pt-3">
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-900 font-medium">Total:</span>
+                                        <span class="text-gray-900 font-medium">0.105 MON ($178.50)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <button type="submit" class="flex-1 bg-[#3A225F] text-white py-3 !rounded-button hover:bg-[#3A225F]/90">Submit Transaction</button>
+                            <button type="reset" class="px-6 py-3 border !rounded-button hover:bg-gray-50">Reset</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+</body></html>
