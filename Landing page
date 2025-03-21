@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Ranch - Multi-Signature Wallet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#000000" data-border-radius="small"></script>
+</head>
+<body class="bg-[#3A225F] min-h-screen font-[Inter] relative before:content-[&#39;&#39;] before:absolute before:inset-0 before:bg-[radial-gradient(white_1px,transparent_1px)] before:bg-[length:20px_20px] before:opacity-[0.25]">
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-[#3A225F]/90 backdrop-blur-lg border-b border-white/10 sm:block">
+        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 flex-wrap">
+                <div class="flex items-center">
+                    <img src="https://ai-public.creatie.ai/gen_page/logo_placeholder.png" alt="SecureVault" class="h-8 w-auto"/>
+                    <span class="ml-3 text-xl font-semibold text-white">Ranch</span>
+                </div>
+                <button class="!rounded-full bg-[#6B4A9B] hover:bg-[#5B3A8B] text-white font-medium px-4 sm:px-6 py-2 transition-all shadow-md hover:shadow-lg shadow-black/30 text-sm sm:text-base">
+                    Launch App
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-16">
+        <section class="relative overflow-hidden bg-gradient-to-b from-[#3A225F] to-[#4B336F] py-32">
+            <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="flex flex-col items-center text-center">
+                    <h1 class="text-3xl sm:text-5xl font-bold text-[#F5F5F5] mb-6 font-display tracking-tight animate-fadeIn text-shadow-black">Ranch on Monad</h1>
+                    <p class="text-xl sm:text-2xl text-[#E6E6FA] mb-12 max-w-3xl font-display tracking-wide animate-slideIn px-4">Secure Your Assets with Our Multi-Signature Wallet</p>
+                    <button class="!rounded-full bg-[#6B4A9B] hover:bg-[#5B3A8B] text-white text-base sm:text-lg font-semibold px-8 sm:px-12 py-3 sm:py-4 transition-all shadow-md hover:shadow-lg shadow-black/30">
+                        Get Started Now
+                    </button>
+                </div>
+            </div>
+            <div class="absolute inset-0 overflow-hidden">
+                <img src="https://creatie.ai/ai/api/search-image?query=A simple minimalist 2D vector illustration of a secure vault in purple color on transparent background, clean single line design&width=1200&height=800&orientation=landscape&removebg=true&flag=a2dddfd1-eda7-429a-9eb4-8f92e4e10722&flag=7c23977f-ac8a-48b8-998f-11dbd68692b7&flag=4357f6a8-57aa-4d56-a6fb-ac247b908e3a&flag=28d8a240-38da-47f7-9515-b4746337e4b5&flag=54ff93fd-1814-45d6-8132-6e90d927be14&flag=22cabb00-1584-4eda-a3ee-1a5ccbef0589&flag=411b365b-a245-42c7-9c80-0ceeebbbb883&flag=6f580974-b7e5-474c-a254-bb9fc1bfbc34&flag=ec0b2b3b-7441-4763-9ab5-cc49de86d113&flag=9eb2408e-f786-438e-a90a-6a50b9cb02de&flag=7459cf1b-12cd-40ac-9384-51d4cb655790&flag=64e18df6-19b1-41f1-a2b6-a51ef851fe7a&flag=d21474c7-c032-4db4-8d69-8b1d6f61f518&flag=6daa22b5-1aab-4e05-b671-7716483e2e9b&flag=d6ecc4f1-85af-4b9c-8430-98b1d984eeda" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-1/2 opacity-10" alt="Hero Background"/>
+            </div>
+        </section>
+
+        <section class="py-24 bg-[#3A225F]">
+            <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                    <div class="bg-white/5 backdrop-blur-lg rounded-lg p-8 transform hover:scale-105 transition-transform duration-300">
+                        <div class="text-white mb-6">
+                            <i class="fas fa-shield-alt text-4xl animate-bounce"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-4">Multi-Signature Security</h3>
+                        <p class="text-[#E6E6FA]/80">Enhanced protection with multiple key holders required for transaction approval, ensuring your assets remain secure.</p>
+                    </div>
+                    <div class="bg-white/5 backdrop-blur-lg rounded-lg p-8 transform hover:scale-105 transition-transform duration-300">
+                        <div class="text-white mb-6">
+                            <i class="fas fa-chart-line text-4xl animate-pulse"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-4">Real-Time Tracking</h3>
+                        <p class="text-[#E6E6FA]/80">Monitor your transactions and wallet activity in real-time with comprehensive analytics and reporting.</p>
+                    </div>
+                    <div class="bg-white/5 backdrop-blur-lg rounded-lg p-8 transform hover:scale-105 transition-transform duration-300">
+                        <div class="text-white mb-6">
+                            <i class="fas fa-cogs text-4xl animate-spin"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-4">Custom Workflows</h3>
+                        <p class="text-[#E6E6FA]/80">Create and customize approval workflows to match your organization&#39;s security requirements.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-[#4B336F]">
+            <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col sm:flex-row justify-center gap-8 sm:gap-12 items-center">
+                    <div class="flex items-center">
+                        <i class="fas fa-lock text-white text-3xl mr-4"></i>
+                        <div>
+                            <h4 class="text-white font-semibold">Multi-Layer Authentication</h4>
+                            <p class="text-[#E6E6FA]/80 text-sm">Advanced security protocols</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-database text-white text-3xl mr-4"></i>
+                        <div>
+                            <h4 class="text-white font-semibold">Bank-Grade Encryption</h4>
+                            <p class="text-[#E6E6FA]/80 text-sm">Industry-leading protection</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-key text-white text-3xl mr-4"></i>
+                        <div>
+                            <h4 class="text-white font-semibold">Distributed Key Management</h4>
+                            <p class="text-[#E6E6FA]/80 text-sm">Decentralized security</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-[#3A225F]">
+            <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold text-white mb-8">Create Your Secure Wallet Today</h2>
+                <button class="!rounded-full bg-[#6B4A9B] hover:bg-[#5B3A8B] text-white text-base sm:text-lg font-semibold px-8 sm:px-12 py-3 sm:py-4 transition-all shadow-md hover:shadow-lg shadow-black/30">
+                    Get Started
+                </button>
+                <p class="mt-6 text-[#E6E6FA]/80">Join thousands of users who trust Ranch with their digital assets</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[#3A225F] border-t border-white/10 py-8">
+        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
+                <div class="text-[#E6E6FA]/60 text-sm">© 2024 Ranch. All rights reserved.</div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-[#E6E6FA]/60 hover:text-[#E6E6FA]">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-[#E6E6FA]/60 hover:text-[#E6E6FA]">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="#" class="text-[#E6E6FA]/60 hover:text-[#E6E6FA]">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body></html>
